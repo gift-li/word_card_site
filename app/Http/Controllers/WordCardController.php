@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\WordCard;
 
 class WordCardController extends Controller
 {
@@ -13,7 +14,7 @@ class WordCardController extends Controller
      */
     public function index()
     {
-        //
+        return view('card.index');
     }
 
     /**
