@@ -2,7 +2,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
     mode: "jit",
-    darkmode: false, // or 'media' or 'class'
+    darkMode: "class", // or 'media' or 'class'
 
     content: [
         "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",

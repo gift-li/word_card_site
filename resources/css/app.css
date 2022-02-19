@@ -1,3 +1,73 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* @layer components {
+    .sidebar {
+        @apply flex flex-col flex-shrink-0 w-full text-gray-700 bg-white md:w-4/12 lg:w-3/12 xl:w-56 dark:text-gray-200 dark:bg-gray-800;
+    }
+
+    .sidebar-container {
+        @apply flex flex-row items-center justify-between flex-shrink-0 px-8 py-4;
+    }
+
+    .sidebar-link {
+        @apply block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-md;
+    }
+
+    .sidebar-dropdown {
+        @apply flex-grow px-4 pb-4 md:block md:pb-0 md:overflow-y-auto;
+    }
+} */
+
+@layer components {
+    .navbar {
+        @apply bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded border-b;
+        /* dark:bg-gray-800; */
+    }
+
+    .navbar-container {
+        @apply container flex flex-wrap items-center justify-between px-4 mx-auto;
+    }
+
+    .navbar-icon-text {
+        @apply text-2xl font-medium text-blue-500;
+    }
+
+    .navbar-tag {
+        @apply items-center justify-between hidden w-full md:flex md:w-auto md:order-1;
+    }
+
+    .navbar-tag > div {
+        @apply flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium;
+    }
+
+    .navbar-tag a {
+        @apply flex py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 sm:text-sm md:text-base lg:text-lg hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 first:text-white first:bg-blue-700 first:rounded first:md:bg-transparent first:md:text-blue-700 first:dark:text-white;
+    }
+
+    .navbar-btn-darkmode {
+        @apply text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-3;
+    }
+
+    .navbar-btn-collapse {
+        @apply text-white bg-blue-700 hover:bg-blue-800
+                focus:ring-4 focus:ring-blue-300
+                font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0
+                dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+    }
+
+    .navbar-btn-login {
+        @apply text-white bg-blue-700 hover:bg-blue-800
+                focus:ring-4 focus:ring-blue-300
+                font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3
+                dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+    }
+
+    .navbar-btn-register {
+        @apply text-white bg-gray-400 hover:bg-gray-600
+                focus:ring-4 focus:ring-gray-300
+                font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3
+                dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800;
+    }
+}
